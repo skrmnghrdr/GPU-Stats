@@ -1,0 +1,1 @@
+nvidia-smi --query-gpu=timestamp,clocks.gr,clocks.mem,pstate,utilization.gpu,utilization.memory,memory.used,power.draw,fan.speed --format=csv -lms 500 > nvidia_gpu_stats_%date:~-4,4%-%date:~-10,2%-%date:~-7,2%_%time:~0,2%-%time:~3,2%-%time:~6,2%.csv
